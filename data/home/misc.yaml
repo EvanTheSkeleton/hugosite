@@ -1,0 +1,32 @@
+id: misc
+type: projects
+icon: code
+title: Misc Non-Project Things
+items:
+    - title: Avalonia C# Framework
+      type: Testing
+      description: Learn Basic C#, Alvonia Application Framework for Cross Platform support, and .NET development. I liked C# and will consider using!
+      tech:
+        - C#
+        - Avalonia
+    - title: Tauri and Rust
+      type: Testing
+      description: Learn Tari Framework and Rust. Honestly, this is far from my favorite framework/language, so I didnt get too far. I learned further rust in a future class.
+      tech:
+        - Rust
+        - Tauri
+    - title: C++ Data Structures
+      type: Class
+      description: C++ pointers & linked lists from Data Structures course. I prefer C or C# over C++, however I would like to do more with C++ outside of structures.
+      tech:
+        - C++
+      links:
+       - label: Code
+         url: https://example.com
+    - title: Shynet Exhibition Group
+      type: Personal
+      role: Founder
+      description: Together we oversee, investigate, and take action against instability within the technology industry. Details later as this idea develops in my head.
+      links:
+        - label: In-Progress
+          icon: clock

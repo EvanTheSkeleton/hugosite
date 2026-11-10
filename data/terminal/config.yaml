@@ -1,0 +1,16 @@
+user: poweruser
+host: nixOS-is-epic
+directory: "~"
+window_title: "Terminal"
+auto_command: help
+builtins:
+  - name: clear
+    description: Clear terminal output
+  - name: whoami
+    description: Print current user
+  - name: date
+    description: Display current system date
+  - name: echo
+    description: Print text back to the terminal
+  - name: sudo
+    description: Try elevated privileges

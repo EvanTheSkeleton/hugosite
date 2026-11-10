@@ -1,0 +1,14 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'My New Hugo Project'
+theme = 'nerdy'
+
+[security.exec]
+allow = [
+  '^(dart-)?sass$',
+  '^go$',
+  '^git$',
+  '^node$',
+  '^postcss$',
+  '^tailwindcss$'
+]

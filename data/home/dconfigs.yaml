@@ -1,0 +1,13 @@
+id: dconfigs
+type: projects
+icon: code
+title: My Device Configs
+items:
+    - title: Linux Dotfiles
+      type: Personal
+      description: I daily NixOS as my primary distro! My configuration files.
+      tech:
+        - Nix Config
+      links:
+       - label: Code
+         url: https://example.com

@@ -1,0 +1,125 @@
+id: creations
+type: projects
+icon: code
+title: My Treasured Creations
+items:
+    - title: PGA-MC Capture The Flag
+      role: Creator
+      type: Club
+      description: A complex minigame supporting up to 10 players in a Minecraft Server
+        environment featuring kits, powerups, and bonus flag. Forked from RAMCTF.
+      tech:
+       - Java
+       - API
+       - YAML/SQLite
+      links:
+       - label: Code
+         url: https://example.com
+    - title: Curva Chatting Application
+      role: Founder & Team Leader
+      type: Class
+      description: Curva goes around the bend of a curve unlike existing
+        platforms which are linear in objective by utilizing dynamic UI/UX environments and AI.
+      tech:
+       - NodeJS
+       - PostgreSQL
+       - AI
+      links:
+        - label: In-Progress
+          icon: clock
+    - title: CPC Project Portal
+      role: Creator & Developer
+      type: Club
+      description: Web application made in NodeJS for project management within the club,
+        allowing students to take on project opportunities.
+      tech:
+       - NodeJS
+       - PostgreSQL
+       - Auth
+      links:
+        - label: In-Progress
+          icon: clock
+    - title: Discord Course Auth Bot
+      role: Creator & Developer
+      type: Work
+      description: Discord bot that contacted the schools Canvas API to automatically find
+        the section a students section, and 2FA via email to confirm student identity.
+      tech:
+        - Python
+        - Multiple API
+        - Discord.py
+      links:
+       - label: Code
+         url: https://example.com
+
+    - title: Registration OAuth2 Callback
+      role: Creator & Developer
+      type: Personal
+      description: A registration webpage that confirms an email, adds user to system,
+        and OAuth2 call's back to another application (currently Discord).
+      tech:
+        - Python
+        - SQLite
+        - OAuth2
+      links:
+       - label: Code
+         url: https://example.com
+    - title: PGA MC Plugin Downloader/Updater
+      role: Creater & Developer
+      type: Club
+      description: Built as part of Platt Gaming Association online gaming network I have
+        setup for them. GUI for updating Minecraft plugins. Packaged as .deb
+      tech:
+        - NodeJS
+        - Debian
+        - OS Library
+      links:
+       - label: Code
+         url: https://example.com
+    - title: PGA Bash Script Tool & Documentation
+      role: Creator & Developer
+      type: Club
+      description: Built as part of Platt Gaming Association online gaming network I have
+        setup for them. Bash infrustructure script and important docs.
+      tech:
+        - Bash
+        - Linux (Debian)
+        - Markdown
+      links:
+       - label: Code
+         url: https://example.com
+    - title: CrimeFind (Terrorism)
+      role: Creator & Developer
+      type: Class
+      description: Interactive map containing massive database of terrorism in the US.
+        AI Model tries to explain the events with little data as a fun bonus.
+      tech:
+        - PostgreSQL
+        - Python Bokeh
+        - Llamma AI model
+      links:
+       - label: Code
+         url: https://example.com
+    - title: Old Website
+      role: Creater & Developer
+      type: Personal
+      description: My old website I made from scratch including a blog and associated utility.
+        Discontinued in favor of Hugo and moving of hosts.
+      tech:
+        - Web (HTML/CSS/JS)
+        - Java
+      links:
+       - label: Code
+         url: https://example.com
+    - title: Hugo Website
+      role: Site Owner
+      type: Personal
+      description: Website made using Hugo using the Nerdy theme.
+      tech:
+        - Static Site Generator
+        - HTML/CSS
+        - Hugo
+      links:
+       - label: Code
+         url: https://example.com
+

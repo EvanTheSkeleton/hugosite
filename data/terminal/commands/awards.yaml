@@ -1,0 +1,28 @@
+name: awards
+label: Awards
+description: My Acomplishments
+quick: true
+weight: 40
+roles:
+  - title: 2nd Place RISE Award
+    company: Goodwill SCW
+    period: 2026
+    highlights:
+      - Awared second place in Goodwill RISE (Results, Inclusion, Stewardship, and Empathy) award behind my manager.
+      - Received a letter from the CEO of Goodwill SCW expressing how much it means to the mission and the community.
+      - I will always go above and beyond for my customers and stand my grounds as a team player for progress.
+  - title: Self-Checkout Recognitions
+    company: Target
+    period: 2023
+    highlights:
+      - Asset Protection and Store Management frequently pointed out how well I ran the checkout.
+      - Received a performance award for the reputation brought to the store and teamwork.
+      - Though I am greatful for the award, it was not necessary. I just care about my customer and team success.
+  - title: Computer Science Department Contributions
+    company: UW-Platteville
+    period: 2023-Present
+    highlights:
+      - Graded for the instructors numerous times and worked with them to improve course goals.
+      - Found out through experiments that the University Canvas API was open and began making tools.
+      - Took over leadership of defunct ACM Club and rebranded as Computer Programming Club; saw lots of success.
+      - Continuously worked with the department to further improve the program and make more opportunities available to students.

@@ -1,0 +1,32 @@
+name: skills
+label: Skills
+description: My technical stack
+quick: true
+weight: 20
+categories:
+  - key: core_languages
+    items:
+      - C#
+      - Java
+      - JavaScript
+      - Python
+      - HTML/CSS
+  - key: frontend
+    items:
+      - Web
+      - Flutter
+      - Avalonia
+  - key: backend
+    items:
+      - Node.js
+      - Express
+      - Python Web Server
+  - key: database
+    items:
+      - PostgreSQL
+      - SQLite
+  - key: devops_tools
+    items:
+      - Git
+      - Docker
+      - Linux / Bash

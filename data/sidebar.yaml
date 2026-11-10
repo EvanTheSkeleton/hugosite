@@ -1,0 +1,53 @@
+profile:
+    name: "Evan Niederwerfer"
+    title: Full-Stack Developer
+    description: Developer specializing in algorithms, networking and integrations. Often finds hacky ways to solve problems in the most restrictive or unusual environments. Entrepreneur and leader by heart.
+    status:
+     label: Looking For Work
+     value: Internships
+     preference_label: Preference
+     preference: Remote or Wisconsin
+    links:
+      - icon: website
+        label: Gitea Repository
+        url: https://example.com
+      - icon: linkedin
+        label: Evan Niederwerfer
+        url: https://example.com
+      - icon: mail
+        label: hello@evanniederwerfer.com
+        url: mailto:hello@evanniederwerfer.com
+
+sections:
+        - id: school-stats
+          type: stats
+          title: Current UW-Platteville Student
+          items:
+            - label: Year
+              value: 3.5
+              accent: purple
+            - label: Status
+              value: Senior
+              accent: purple
+            - label: Graduating
+              value: Fall 2027
+              accent: purple
+            - label: Major
+              value: Comp Sci
+              accent: purple
+            - label: Minor
+              value: Cyber Sec
+              accent: purple
+            - label: Credits
+              value: 92
+              accent: purple
+        - id: club-involvement
+          type: stats
+          title: Campus Club Leadership
+          items:
+            - label: Computer Programming Club
+              value: Founder/Pres
+              accent: amber
+            - label: Platteville Gaming Association
+              value: Developer
+              accent: amber

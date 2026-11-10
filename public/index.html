@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="en-us" class="scroll-smooth" x-data="themeToggle">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>My New Hugo Project</title>
+
+
+  
+  
+    
+      <script src="/js/theme-scheme.js"></script>
+    
+  
+
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/main.css">
+    
+  
+
+
+
+
+
+  
+  
+    
+      <script src="/js/main.js" defer></script>
+    
+  
+
+
+
+  	<meta name="generator" content="Hugo 0.169.0">
+</head>
+  <body class="min-h-screen bg-background text-foreground">
+    
+    <a class="nerdy-skip-link" href="#main-content">Skip to main content</a>
+    <div class="fixed right-4 top-4 z-[80] sm:right-6 lg:right-8">
+  <button class="nerdy-icon-button shadow-xl shadow-slate-300/30 backdrop-blur-md ring-1 ring-slate-900/5 dark:shadow-black/30 dark:ring-white/10" type="button" aria-label="Toggle theme" aria-pressed="false" x-on:click="toggle()" x-bind:aria-pressed="dark.toString()" x-bind:aria-label="dark ? 'Switch to light mode' : 'Switch to dark mode'">
+    <span x-show="dark" x-cloak><svg class="h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+</span>
+    <span x-show="!dark" x-cloak><svg class="h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364-1.414 1.414M7.05 16.95l-1.414 1.414m12.728 0-1.414-1.414M7.05 7.05 5.636 5.636M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+</span>
+  </button>
+</div>
+
+    
+    <main id="main-content" tabindex="-1" class="w-full">
+      
+
+
+
+  
+  
+  
+
+  <div class="nerdy-page-surface nerdy-page-surface--home">
+    <div class="nerdy-ambient-bg"></div>
+    <div class="nerdy-top-glow"></div>
+
+    <div class="nerdy-container pt-16 lg:pt-20">
+      <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-12">
+        
+
+  <aside class="nerdy-sticky-sidebar lg:sticky lg:top-12 lg:col-span-4 lg:h-fit lg:self-start">
+    <div class="flex flex-col gap-6">
+      
+        <section class="nerdy-sidebar-card">
+  <div class="mb-6 flex items-center gap-4">
+    <div class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-300/80 bg-slate-100/90 dark:border-slate-600 dark:bg-slate-900/70">
+        <span class="font-mono text-2xl text-accent-cyan">{}</span>
+    </div>
+    <div>
+      <h1 class="text-xl font-bold tracking-tight text-slate-950 dark:text-white">Evan Niederwerfer</h1>
+      <p class="mt-1 font-mono text-sm text-accent-cyan">Full-Stack Developer</p>
+    </div>
+  </div>
+
+  <p class="mb-6 text-sm leading-relaxed nerdy-muted">Developer specializing in algorithms, networking and integrations. Often finds hacky ways to solve problems in the most restrictive or unusual environments. Entrepreneur and leader by heart.</p>
+
+  
+    <div class="mb-6 flex flex-col gap-2 rounded-lg border border-slate-300/70 bg-slate-50/95 p-4 font-mono text-xs shadow-inner dark:border-slate-700 dark:bg-slate-900/45">
+      <div class="flex items-center gap-3">
+        <span class="h-2 w-2 animate-pulse rounded-full bg-accent-emerald shadow-[0_0_10px_rgba(16,185,129,0.75)]"></span>
+        <span class="text-slate-800 dark:text-slate-300">Looking For Work: <span class="font-bold text-slate-950 dark:text-white">Internships</span></span>
+      </div>
+      <div class="pl-5 nerdy-muted">└─ Preference: <span class="text-accent-cyan">Remote or Wisconsin</span></div>
+    </div>
+  
+
+  
+    <div class="flex flex-col gap-3">
+      
+        <a class="group flex items-center gap-3 text-sm nerdy-muted transition-colors hover:text-slate-950 dark:hover:text-white" href="https://example.com" target="_blank" rel="noopener noreferrer">
+          <span class="transition-colors group-hover:text-accent-cyan"><svg class="h-5 w-5" aria-hidden="true" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="currentColor" fill="none"><path d="M39.93,55.72A24.86,24.86,0,1,1,56.86,32.15a37.24,37.24,0,0,1-.73,6"/><path d="M37.86,51.1A47,47,0,0,1,32,56.7"/><path d="M32,7A34.14,34.14,0,0,1,43.57,30a34.07,34.07,0,0,1,.09,4.85"/><path d="M32,7A34.09,34.09,0,0,0,20.31,32.46c0,16.2,7.28,21,11.66,24.24"/><line x1="10.37" y1="19.9" x2="53.75" y2="19.9"/><line x1="32" y1="6.99" x2="32" y2="56.7"/><line x1="11.05" y1="45.48" x2="37.04" y2="45.48"/><line x1="7.14" y1="32.46" x2="56.86" y2="31.85"/><path d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z"/></svg></span>
+          Gitea Repository
+        </a>
+      
+        <a class="group flex items-center gap-3 text-sm nerdy-muted transition-colors hover:text-slate-950 dark:hover:text-white" href="https://example.com" target="_blank" rel="noopener noreferrer">
+          <span class="transition-colors group-hover:text-accent-cyan"><svg class="h-5 w-5" aria-hidden="true" viewBox="2 2 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z" fill="currentColor"/>
+</svg>
+</span>
+          Evan Niederwerfer
+        </a>
+      
+        <a class="group flex items-center gap-3 text-sm nerdy-muted transition-colors hover:text-slate-950 dark:hover:text-white" href="mailto:hello@evanniederwerfer.com" >
+          <span class="transition-colors group-hover:text-accent-cyan"><svg class="h-5 w-5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+</span>
+          hello@evanniederwerfer.com
+        </a>
+      
+    </div>
+  
+</section>
+
+      
+
+      <section class="nerdy-sidebar-card">
+  <h2 class="mb-4 font-mono text-xs font-bold uppercase tracking-widest nerdy-muted-soft">Current UW-Platteville Student</h2>
+  <div class="space-y-3 font-mono text-xs">
+    
+      
+      <div class="flex items-center justify-between gap-4 border-b border-slate-200/80 pb-2 last:border-b-0 last:pb-0 dark:border-slate-700/50">
+        <span class="nerdy-muted">Year:</span>
+        <span class="text-right font-bold text-accent-purple">3.5</span>
+      </div>
+    
+      
+      <div class="flex items-center justify-between gap-4 border-b border-slate-200/80 pb-2 last:border-b-0 last:pb-0 dark:border-slate-700/50">
+        <span class="nerdy-muted">Status:</span>
+        <span class="text-right font-bold text-accent-purple">Senior</span>
+      </div>
+    
+      
+      <div class="flex items-center justify-between gap-4 border-b border-slate-200/80 pb-2 last:border-b-0 last:pb-0 dark:border-slate-700/50">
+        <span class="nerdy-muted">Graduating:</span>
+        <span class="text-right font-bold text-accent-purple">Fall 2027</span>
+      </div>
+    
+      
+      <div class="flex items-center justify-between gap-4 border-b border-slate-200/80 pb-2 last:border-b-0 last:pb-0 dark:border-slate-700/50">
+        <span class="nerdy-muted">Major:</span>
+        <span class="text-right font-bold text-accent-purple">Comp Sci</span>
+      </div>
+    
+      
+      <div class="flex items-center justify-between gap-4 border-b border-slate-200/80 pb-2 last:border-b-0 last:pb-0 dark:border-slate-700/50">
+        <span class="nerdy-muted">Minor:</span>
+        <span class="text-right font-bold text-accent-purple">Cyber Sec</span>
+      </div>
+    
+      
+      <div class="flex items-center justify-between gap-4 border-b border-slate-200/80 pb-2 last:border-b-0 last:pb-0 dark:border-slate-700/50">
+        <span class="nerdy-muted">Credits:</span>
+        <span class="text-right font-bold text-accent-purple">92</span>
+      </div>
+    
+  </div>
+</section>
+<section class="nerdy-sidebar-card">
+  <h2 class="mb-4 font-mono text-xs font-bold uppercase tracking-widest nerdy-muted-soft">Campus Club Leadership</h2>
+  <div class="space-y-3 font-mono text-xs">
+    
+      
+      <div class="flex items-center justify-between gap-4 border-b border-slate-200/80 pb-2 last:border-b-0 last:pb-0 dark:border-slate-700/50">
+        <span class="nerdy-muted">Computer Programming Club:</span>
+        <span class="text-right font-bold text-accent-amber">Founder/Pres</span>
+      </div>
+    
+      
+      <div class="flex items-center justify-between gap-4 border-b border-slate-200/80 pb-2 last:border-b-0 last:pb-0 dark:border-slate-700/50">
+        <span class="nerdy-muted">Platteville Gaming Association:</span>
+        <span class="text-right font-bold text-accent-amber">Developer</span>
+      </div>
+    
+  </div>
+</section>
+
+    </div>
+  </aside>
+
+
+
+        <div class="flex flex-col gap-8 lg:col-span-8">
+
+
+          
+
+
+
+<div class="relative font-mono text-sm text-slate-900 dark:text-slate-100">
+  <div class="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-accent-cyan/10 via-indigo-300/8 to-fuchsia-300/8 blur-2xl dark:from-accent-cyan/20 dark:via-indigo-500/10 dark:to-fuchsia-500/15"></div>
+  <div
+    class="flex w-full flex-col overflow-hidden rounded-2xl border border-slate-300/90 bg-white/95 shadow-2xl shadow-slate-300/30 ring-1 ring-slate-900/10 backdrop-blur-md transition-all duration-200 dark:border-slate-700/80 dark:bg-slate-950/95 dark:shadow-black/30 dark:ring-black/50"
+    x-bind:class="isFullscreen ? 'fixed inset-3 z-[60] h-auto min-h-0 max-h-none !w-auto sm:inset-6' : 'relative z-10 h-[540px] min-h-[540px] max-h-[540px]'"
+    x-data='terminalPortfolio({&#34;autoCommand&#34;:&#34;help&#34;,&#34;directory&#34;:&#34;~&#34;,&#34;host&#34;:&#34;nixOS-is-epic&#34;,&#34;user&#34;:&#34;poweruser&#34;})'
+    x-on:theme-changed.window="recordThemeChange($event.detail.dark)"
+    x-on:keydown.escape.window="exitFullscreen()"
+    x-on:click="focusInput()"
+    x-cloak
+  >
+    <div class="relative flex h-10 shrink-0 items-center gap-2 border-b border-slate-300/90 bg-slate-100/95 px-4 dark:border-slate-700/80 dark:bg-slate-800">
+      <div class="group/traffic flex items-center gap-2">
+        <div class="h-3.5 w-3.5 rounded-full border border-black/20 bg-[#ff5f56] shadow-sm"></div>
+        <div class="h-3.5 w-3.5 rounded-full border border-black/20 bg-[#ffbd2e] shadow-sm"></div>
+        <button
+          class="group/maximize relative h-3.5 w-3.5 rounded-full border border-black/20 bg-[#27c93f] shadow-sm"
+          type="button"
+          x-bind:title="isFullscreen ? 'Exit fullscreen' : 'Maximize terminal'"
+          x-bind:aria-label="isFullscreen ? 'Exit fullscreen' : 'Maximize terminal'"
+          x-on:click.stop="toggleFullscreen()"
+        >
+          <span class="absolute left-1/2 top-1/2 h-[1.5px] w-1.5 -translate-x-1/2 -translate-y-1/2 rounded bg-transparent transition-colors group-hover/traffic:bg-black/70 group-hover/maximize:bg-black/70"></span>
+          <span class="absolute left-1/2 top-1/2 h-1.5 w-[1.5px] -translate-x-1/2 -translate-y-1/2 rounded bg-transparent transition-colors group-hover/traffic:bg-black/70 group-hover/maximize:bg-black/70" x-show="!isFullscreen"></span>
+        </button>
+      </div>
+      <div class="pointer-events-none absolute inset-x-0 text-center font-sans text-xs font-medium tracking-wide text-slate-600 dark:text-slate-400">
+        Terminal
+      </div>
+    </div>
+
+    <div class="min-h-0 flex-1 overflow-y-auto scroll-smooth p-4 text-slate-900 dark:text-slate-100 md:p-6" x-ref="container" role="log" aria-live="polite" aria-atomic="false" aria-label="Terminal output">
+      <div class="w-full">
+        <template x-for="(entry, index) in history" :key="index">
+          <div>
+            <div class="mb-1" x-show="entry.type === 'command'">
+              <span class="mr-2 font-bold text-slate-900 dark:text-slate-100">
+                <span x-text="`${prompt.user}@${prompt.host}`"></span>
+                <span class="text-accent-cyan" x-text="prompt.directory"></span>
+                %
+              </span>
+              <span class="text-slate-900 dark:text-slate-100" x-text="entry.command"></span>
+            </div>
+            <div x-show="entry.type === 'output'" x-html="entry.html"></div>
+          </div>
+        </template>
+      </div>
+
+      <div class="relative mt-2 flex cursor-text items-center" x-on:click.stop="focusInput()">
+        <span class="mr-2 font-bold text-slate-900 dark:text-slate-100">
+          <span x-text="`${prompt.user}@${prompt.host}`"></span>
+          <span class="text-accent-cyan" x-text="prompt.directory"></span>
+          %
+        </span>
+        <span class="whitespace-pre text-slate-900 dark:text-slate-100" x-text="input"></span>
+        <span class="ml-0.5 block h-[1.2em] w-2 animate-pulse bg-slate-500 dark:bg-slate-400"></span>
+        <input
+          class="absolute left-0 top-0 h-full w-full cursor-text border-none bg-transparent text-transparent opacity-0 outline-none ring-0"
+          type="text"
+          aria-label="Terminal command input"
+          autocomplete="off"
+          spellcheck="false"
+          x-ref="input"
+          x-model="input"
+          x-on:keydown.enter.prevent="submit()"
+          x-bind:disabled="isProcessing"
+        >
+      </div>
+    </div>
+
+    <div class="hide-scrollbar flex h-12 shrink-0 items-center gap-2 overflow-x-auto whitespace-nowrap border-t border-slate-300/90 bg-slate-100/95 px-4 dark:border-slate-700/80 dark:bg-slate-800/50">
+      <div class="mr-2 hidden select-none font-sans text-[10px] font-bold uppercase tracking-widest text-slate-600 dark:text-slate-500 sm:block">Quick_Cmds:</div>
+      <template x-for="command in quickCommands" :key="command.name">
+        <button
+          class="rounded border border-slate-300 bg-white/80 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-slate-700 transition-colors hover:border-accent-cyan/40 hover:bg-white hover:text-accent-cyan active:scale-95 dark:border-slate-600 dark:bg-slate-700/50 dark:text-slate-300 dark:hover:bg-slate-600"
+          type="button"
+          x-text="command.label"
+          x-bind:aria-label="`Run terminal command: ${command.label}`"
+          x-on:click.stop="runQuickCommand(command.name)"
+        ></button>
+      </template>
+      <button
+        class="ml-auto rounded bg-transparent px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-slate-600 transition-colors hover:bg-slate-100 hover:text-accent-cyan active:scale-95 dark:text-slate-400 dark:hover:bg-slate-700/50"
+        type="button"
+        aria-label="Clear terminal output"
+        x-on:click.stop="runQuickCommand('clear')"
+      >Clear</button>
+    </div>
+
+    
+
+
+
+<div class="hidden" aria-hidden="true">
+  <template
+    data-terminal-command="help"
+    data-label="Help"
+    data-description="List available commands"
+    data-weight="0"
+  ><pre class="font-mono whitespace-pre-wrap leading-relaxed">Available commands:
+  <span class="font-bold text-accent-cyan">about</span>       <span class="nerdy-muted">- Information about me</span>
+  <span class="font-bold text-accent-cyan">skills</span>      <span class="nerdy-muted">- My technical stack</span>
+  <span class="font-bold text-accent-cyan">awards</span>      <span class="nerdy-muted">- My Acomplishments</span>
+  <span class="font-bold text-accent-cyan">clear</span>       <span class="nerdy-muted">- Clear terminal output</span>
+  <span class="font-bold text-accent-cyan">whoami</span>      <span class="nerdy-muted">- Print current user</span>
+  <span class="font-bold text-accent-cyan">date</span>        <span class="nerdy-muted">- Display current system date</span>
+  <span class="font-bold text-accent-cyan">echo</span>        <span class="nerdy-muted">- Print text back to the terminal</span>
+  <span class="font-bold text-accent-cyan">sudo</span>        <span class="nerdy-muted">- Try elevated privileges</span></pre>
+</template>
+
+  <template
+    data-terminal-command="whoami"
+    data-label="Whoami"
+    data-description="Print current user"
+    data-weight="90"
+  ><pre class="font-mono whitespace-pre-wrap leading-relaxed"><span class="text-accent-amber">poweruser</span></pre>
+</template>
+
+  
+    
+    <template
+      data-terminal-command="about"
+      data-label="About"
+      data-description="Information about me"
+      data-quick="true"
+      data-weight="10"
+    ><pre class="font-mono whitespace-pre-wrap leading-relaxed"><span class="text-accent-purple">Hi, I&#39;m Evan!</span> <span class="font-bold text-accent-emerald">Currently I do work as a UW-Platteville Student and Goodwill Cashier.</span> My professional work involes surveying the psychology of how people interact in specific contexts, observing the core individual underlying components of interactions, then identifying my users and developing unique considerate ideas quickly. I really enjoy and excel at the logistics in creating scaleable systems of divided responsibility across wide computer networks.
+
+I always find myself analytical in nature and enjoy making other people happy. Computers have always opened up an entirely new, open universe with all of the flashy banners, the networking and the whole exchange of data, etc is something that has always been super cool to me since a young age. What makes me interesting is I also find common interest in different issues from diciplines such as Philosophy, Psychology, Ethics, Law/Crime, Politics, Human Behavior, Biology, and other topic in relation to how people do the things that they do and why. Since I was little, I would find interest in or notice things that often get completly missed by any other person, like when I was at the fireworks and I was the only one noticing the sound reflection and the cool light reflection in the windows of a tall building or me being the only one at a water park noticing a music delay from where I am standing to the speaker on the other side of the park. This plays an important role in how I come up with the ideas that I do, and how I network with others and find many users with a similar problem that they may or may not have realized they had so quickly. I always take a liking for doing the right thing for somebody, it is a fantastic feeling to be able to spot these little things that turn out to be a massive deal for somebody, I take pride in my job for that reason.
+
+Outside of tech related stuff, I enjoy going on adventures. I like to hike, ski, drive atvs/boats/cars/etc (I have a goal to get a pilots license one day). I do code a lot in my free time, but casually when needing a break I am a gamer and play some open world or strategy like games. Some of my favorites include Minecraft, Stardew Valley, Antivirus Survivors 2003, Mini Motorways, Geometry Dash, Rebel Inc, and a few others. I am also do diy projects, repair jobs, or janky upgrades/challenges.. like what is the cheapest drone I could do that streams fantastic video as an example, where it all started with a old drone found at Goodwill with many connectors and lots of room in the shell.
+
+</pre>
+</template>
+  
+    
+    <template
+      data-terminal-command="awards"
+      data-label="Awards"
+      data-description="My Acomplishments"
+      data-quick="true"
+      data-weight="40"
+    ><pre class="font-mono whitespace-pre-wrap leading-relaxed"><span class="font-bold text-accent-emerald">2nd Place RISE Award</span> @ <span class="text-accent-purple">Goodwill SCW</span>
+<span class="text-sm nerdy-muted-soft">2026</span>
+<span class="text-accent-amber">-</span> Awared second place in Goodwill RISE (Results, Inclusion, Stewardship, and Empathy) award behind my manager.
+<span class="text-accent-amber">-</span> Received a letter from the CEO of Goodwill SCW expressing how much it means to the mission and the community.
+<span class="text-accent-amber">-</span> I will always go above and beyond for my customers and stand my grounds as a team player for progress.
+
+<span class="font-bold text-accent-emerald">Self-Checkout Recognitions</span> @ <span class="text-accent-purple">Target</span>
+<span class="text-sm nerdy-muted-soft">2023</span>
+<span class="text-accent-amber">-</span> Asset Protection and Store Management frequently pointed out how well I ran the checkout.
+<span class="text-accent-amber">-</span> Received a performance award for the reputation brought to the store and teamwork.
+<span class="text-accent-amber">-</span> Though I am greatful for the award, it was not necessary. I just care about my customer and team success.
+
+<span class="font-bold text-accent-emerald">Computer Science Department Contributions</span> @ <span class="text-accent-purple">UW-Platteville</span>
+<span class="text-sm nerdy-muted-soft">2023-Present</span>
+<span class="text-accent-amber">-</span> Graded for the instructors numerous times and worked with them to improve course goals.
+<span class="text-accent-amber">-</span> Found out through experiments that the University Canvas API was open and began making tools.
+<span class="text-accent-amber">-</span> Took over leadership of defunct ACM Club and rebranded as Computer Programming Club; saw lots of success.
+<span class="text-accent-amber">-</span> Continuously worked with the department to further improve the program and make more opportunities available to students.
+
+</pre>
+</template>
+  
+    
+    <template
+      data-terminal-command="skills"
+      data-label="Skills"
+      data-description="My technical stack"
+      data-quick="true"
+      data-weight="20"
+    ><pre class="font-mono whitespace-pre-wrap leading-relaxed">{
+  <span class="text-accent-emerald">"core_languages"</span>: [<span class="text-accent-amber">"C#"</span>, <span class="text-accent-amber">"Java"</span>, <span class="text-accent-amber">"JavaScript"</span>, <span class="text-accent-amber">"Python"</span>, <span class="text-accent-amber">"HTML/CSS"</span>],
+  <span class="text-accent-emerald">"frontend"</span>: [<span class="text-accent-amber">"Web"</span>, <span class="text-accent-amber">"Flutter"</span>, <span class="text-accent-amber">"Avalonia"</span>],
+  <span class="text-accent-emerald">"backend"</span>: [<span class="text-accent-amber">"Node.js"</span>, <span class="text-accent-amber">"Express"</span>, <span class="text-accent-amber">"Python Web Server"</span>],
+  <span class="text-accent-emerald">"database"</span>: [<span class="text-accent-amber">"PostgreSQL"</span>, <span class="text-accent-amber">"SQLite"</span>],
+  <span class="text-accent-emerald">"devops_tools"</span>: [<span class="text-accent-amber">"Git"</span>, <span class="text-accent-amber">"Docker"</span>, <span class="text-accent-amber">"Linux / Bash"</span>]
+}</pre>
+</template>
+  
+</div>
+
+  </div>
+</div>
+
+
+          
+            
+              
+                <section class="mt-8" id="recent-posts">
+  <div class="nerdy-section-heading ">
+  <span class="flex h-6 w-6 shrink-0 items-center justify-center text-accent-cyan" style="color: var(--accent-cyan);">
+    <svg class="h-5 w-5" aria-hidden="true" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_901_889)">
+<path d="M7 25V2.005C7 2.005 7 1 8 1H30C30 1 31 1.005 31 2.005V28.005C31 28.005 31 31 28 31H4C4 31 1 31.005 1 27.005V12.005C1 12.005 1 11 2 11H4M13 7H18M13 11H25M13 15H25M13 19H25M13 23H25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_901_889">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+  </span>
+  <h2 class="nerdy-section-title">&lt;&lt; Recent Posts &gt;&gt;</h2>
+</div>
+
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    
+      <div class="nerdy-card-dashed p-5 text-sm nerdy-muted sm:col-span-2">No logs yet. Add Markdown files under <code class="font-mono text-slate-900 dark:text-slate-200">content/posts</code> and they will appear here automatically.</div>
+
+    
+
+    
+  </div>
+</section>
+
+              
+            
+              
+                <section class="mt-4" id="creations">
+  <div class="nerdy-section-heading ">
+  <span class="flex h-6 w-6 shrink-0 items-center justify-center text-accent-cyan" style="color: var(--accent-cyan);">
+    <svg class="h-5 w-5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+  </span>
+  <h2 class="nerdy-section-title">&lt;&lt; My Treasured Creations &gt;&gt;</h2>
+</div>
+
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">PGA-MC Capture The Flag</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Creator</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Club</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">A complex minigame supporting up to 10 players in a Minecraft Server environment featuring kits, powerups, and bonus flag. Forked from RAMCTF.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Java</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">API</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">YAML/SQLite</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+                </span>
+                <span>Code</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">Curva Chatting Application</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Founder &amp; Team Leader</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Class</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">Curva goes around the bend of a curve unlike existing platforms which are linear in objective by utilizing dynamic UI/UX environments and AI.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">NodeJS</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">PostgreSQL</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">AI</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+
+                </span>
+                <span>In-Progress</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">CPC Project Portal</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Creator &amp; Developer</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Club</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">Web application made in NodeJS for project management within the club, allowing students to take on project opportunities.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">NodeJS</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">PostgreSQL</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Auth</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+
+                </span>
+                <span>In-Progress</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">Discord Course Auth Bot</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Creator &amp; Developer</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Work</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">Discord bot that contacted the schools Canvas API to automatically find the section a students section, and 2FA via email to confirm student identity.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Python</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Multiple API</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Discord.py</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+                </span>
+                <span>Code</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">Registration OAuth2 Callback</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Creator &amp; Developer</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Personal</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">A registration webpage that confirms an email, adds user to system, and OAuth2 call&#39;s back to another application (currently Discord).</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Python</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">SQLite</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">OAuth2</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+                </span>
+                <span>Code</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">PGA MC Plugin Downloader/Updater</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Creater &amp; Developer</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Club</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">Built as part of Platt Gaming Association online gaming network I have setup for them. GUI for updating Minecraft plugins. Packaged as .deb</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">NodeJS</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Debian</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">OS Library</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+                </span>
+                <span>Code</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">PGA Bash Script Tool &amp; Documentation</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Creator &amp; Developer</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Club</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">Built as part of Platt Gaming Association online gaming network I have setup for them. Bash infrustructure script and important docs.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Bash</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Linux (Debian)</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Markdown</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+                </span>
+                <span>Code</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">CrimeFind (Terrorism)</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Creator &amp; Developer</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Class</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">Interactive map containing massive database of terrorism in the US. AI Model tries to explain the events with little data as a fun bonus.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">PostgreSQL</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Python Bokeh</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Llamma AI model</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+                </span>
+                <span>Code</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">Old Website</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Creater &amp; Developer</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Personal</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">My old website I made from scratch including a blog and associated utility. Discontinued in favor of Hugo and moving of hosts.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Web (HTML/CSS/JS)</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Java</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+                </span>
+                <span>Code</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">Hugo Website</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Site Owner</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Personal</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">Website made using Hugo using the Nerdy theme.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Static Site Generator</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">HTML/CSS</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Hugo</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+                </span>
+                <span>Code</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+  </div>
+</section>
+
+              
+            
+              
+                <section class="mt-4" id="dconfigs">
+  <div class="nerdy-section-heading ">
+  <span class="flex h-6 w-6 shrink-0 items-center justify-center text-accent-cyan" style="color: var(--accent-cyan);">
+    <svg class="h-5 w-5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+  </span>
+  <h2 class="nerdy-section-title">&lt;&lt; My Device Configs &gt;&gt;</h2>
+</div>
+
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">Linux Dotfiles</h3>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Personal</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">I daily NixOS as my primary distro! My configuration files.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Nix Config</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+                </span>
+                <span>Code</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+  </div>
+</section>
+
+              
+            
+              
+                <section class="mt-4" id="misc">
+  <div class="nerdy-section-heading ">
+  <span class="flex h-6 w-6 shrink-0 items-center justify-center text-accent-cyan" style="color: var(--accent-cyan);">
+    <svg class="h-5 w-5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+  </span>
+  <h2 class="nerdy-section-title">&lt;&lt; Misc Non-Project Things &gt;&gt;</h2>
+</div>
+
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">Avalonia C# Framework</h3>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Testing</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">Learn Basic C#, Alvonia Application Framework for Cross Platform support, and .NET development. I liked C# and will consider using!</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">C#</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Avalonia</span>
+      
+    </div>
+  
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">Tauri and Rust</h3>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Testing</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">Learn Tari Framework and Rust. Honestly, this is far from my favorite framework/language, so I didnt get too far. I learned further rust in a future class.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Rust</span>
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">Tauri</span>
+      
+    </div>
+  
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">C&#43;&#43; Data Structures</h3>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Class</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">C&#43;&#43; pointers &amp; linked lists from Data Structures course. I prefer C or C# over C&#43;&#43;, however I would like to do more with C&#43;&#43; outside of structures.</p>
+  
+    <div class="mt-3 flex flex-wrap gap-2">
+      
+        <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">C&#43;&#43;</span>
+      
+    </div>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+
+                </span>
+                <span>Code</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+      <article class="group nerdy-card nerdy-card-hover nerdy-card-accent-cyan relative flex flex-col overflow-hidden p-6">
+  <div class="flex items-start justify-between gap-4">
+    <div class="min-w-0">
+      <h3 class="text-xl font-bold tracking-tight nerdy-card-title nerdy-title-accent-cyan">Shynet Exhibition Group</h3>
+      
+        <p class="mt-1 line-clamp-2 text-sm leading-5 nerdy-muted-soft">Founder</p>
+      
+    </div>
+    
+      <span class="nerdy-chip nerdy-chip-cyan shrink-0 px-2.5 py-1 font-bold leading-4 tracking-wide uppercase">Personal</span>
+    
+  </div>
+  <p class="mt-3 line-clamp-3 text-sm leading-6 nerdy-muted">Together we oversee, investigate, and take action against instability within the technology industry. Details later as this idea develops in my head.</p>
+  
+  
+    <div class="mt-auto pt-3">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+        
+          <div class="flex flex-wrap items-center gap-4">
+            
+              <a class="inline-flex items-center gap-2 text-sm nerdy-link" href="" target="_blank" rel="noopener noreferrer">
+                <span class="flex h-4 w-4 shrink-0 items-center justify-center">
+                  <svg class="block h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+
+                </span>
+                <span>In-Progress</span>
+              </a>
+            
+          </div>
+        
+        
+      </div>
+    </div>
+  
+</article>
+
+    
+  </div>
+</section>
+
+              
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    </main>
+    
+  </body>
+</html>
