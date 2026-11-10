@@ -12,3 +12,7 @@ allow = [
   '^postcss$',
   '^tailwindcss$'
 ]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
