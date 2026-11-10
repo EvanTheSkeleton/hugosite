@@ -22,7 +22,7 @@ items:
         - C++
       links:
        - label: Code
-         url: https://example.com
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/CPP-Data-Structures-Class-Code
     - title: Shynet Exhibition Group
       type: Personal
       role: Founder

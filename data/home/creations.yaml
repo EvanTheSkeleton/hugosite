@@ -14,7 +14,7 @@ items:
        - YAML/SQLite
       links:
        - label: Code
-         url: https://example.com
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/PGA-Capture-The-Flag
     - title: Curva Chatting Application
       role: Founder & Team Leader
       type: Class
@@ -50,7 +50,7 @@ items:
         - Discord.py
       links:
        - label: Code
-         url: https://example.com
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/Discord-Course-Auth-Bot
 
     - title: Registration OAuth2 Callback
       role: Creator & Developer
@@ -63,7 +63,7 @@ items:
         - OAuth2
       links:
        - label: Code
-         url: https://example.com
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/Registration-Page
     - title: PGA MC Plugin Downloader/Updater
       role: Creater & Developer
       type: Club
@@ -75,7 +75,7 @@ items:
         - OS Library
       links:
        - label: Code
-         url: https://example.com
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/PGA-MC-Plugin-Downloader-Updater
     - title: PGA Bash Script Tool & Documentation
       role: Creator & Developer
       type: Club
@@ -87,7 +87,7 @@ items:
         - Markdown
       links:
        - label: Code
-         url: https://example.com
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/PGA-Docs-And-Tools
     - title: CrimeFind (Terrorism)
       role: Creator & Developer
       type: Class
@@ -99,7 +99,7 @@ items:
         - Llamma AI model
       links:
        - label: Code
-         url: https://example.com
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/CrimeFind
     - title: Old Website
       role: Creater & Developer
       type: Personal
@@ -110,7 +110,7 @@ items:
         - Java
       links:
        - label: Code
-         url: https://example.com
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/Old-Website
     - title: Hugo Website
       role: Site Owner
       type: Personal
@@ -121,5 +121,5 @@ items:
         - Hugo
       links:
        - label: Code
-         url: https://example.com
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/Hugo-Site
 

@@ -10,13 +10,13 @@ profile:
     links:
       - icon: website
         label: Gitea Repository
-        url: https://example.com
+        url: https://gitea.evanniederwerfer.com/explore/repos
       - icon: linkedin
         label: Evan Niederwerfer
-        url: https://example.com
+        url: https://www.linkedin.com/in/evan-niederwerfer/
       - icon: mail
-        label: hello@evanniederwerfer.com
-        url: mailto:hello@evanniederwerfer.com
+        label: niederwerfee@uwplatt.edu
+        url: mailto:niederwerfee@uwplatt.edu
 
 sections:
         - id: school-stats

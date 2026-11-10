@@ -10,4 +10,4 @@ items:
         - Nix Config
       links:
        - label: Code
-         url: https://example.com
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/Dotfiles
