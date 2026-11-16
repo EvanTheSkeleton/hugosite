@@ -14,7 +14,7 @@ items:
        - YAML/SQLite
       links:
        - label: Code
-         url: https://gitea.evanniederwerfer.com/eniederwerfer/PGA-Capture-The-Flag
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/PGA-Creations
     - title: Curva Chatting Application
       role: Founder & Team Leader
       type: Class
@@ -39,6 +39,8 @@ items:
       links:
         - label: In-Progress
           icon: clock
+        - label: Code
+          url: https://gitea.evanniederwerfer.com/eniederwerfer/CPC-Club-Repo
     - title: Discord Course Auth Bot
       role: Creator & Developer
       type: Work
@@ -75,7 +77,7 @@ items:
         - OS Library
       links:
        - label: Code
-         url: https://gitea.evanniederwerfer.com/eniederwerfer/PGA-MC-Plugin-Downloader-Updater
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/PGA-Creations
     - title: PGA Bash Script Tool & Documentation
       role: Creator & Developer
       type: Club
@@ -87,7 +89,7 @@ items:
         - Markdown
       links:
        - label: Code
-         url: https://gitea.evanniederwerfer.com/eniederwerfer/PGA-Docs-And-Tools
+         url: https://gitea.evanniederwerfer.com/eniederwerfer/PGA-Creations
     - title: CrimeFind (Terrorism)
       role: Creator & Developer
       type: Class
