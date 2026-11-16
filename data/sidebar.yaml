@@ -1,6 +1,7 @@
 profile:
     name: "Evan Niederwerfer"
     title: Full-Stack Developer
+    avatar: "images/me_school_photo.jpg"
     description: Developer specializing in algorithms, networking and integrations. Often finds hacky ways to solve problems in the most restrictive or unusual environments. Entrepreneur and leader by heart.
     status:
      label: Looking For Work
